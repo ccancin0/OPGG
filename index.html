@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="league of legends summoner search">
+  <meta name="author" content="CC">
+  <title>Peelite - Summoner Search</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div id="brand">
+        <h1><a href="#">OP.GG</a></h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="analytics.html">Champion Analytics</a></li>
+          <li><a href="statistics.html">Statistics</a></li>
+          <li><a href="leaderboard.html">Leaderboards</a></li>
+          <li><a href="matches.html">Pro Matches</a></li>
+        </ul>
+      </nav>
+      <div id="searchBtn">
+        <form>
+          <input type="text" id="userName" placeholder="Enter summoner name">
+          <button type="submit" id="button1">Go</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <section id="summoner">
+    <div class="container">
+      <img src="./img/challenger.png" id="rankIcon">
+      <img src="./img/profileIcon1390.jpg" id="profileIcon">
+      <div id="name">
+        <h2>Peelite</h2>
+        <button id="statBtn">Renew</button>
+        <button class="showBtn">Solo MMR</button>
+        <button class="showBtn">Tier Graph</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu">
+    <div class="container2">
+      <nav id="menu-items">
+        <ul>
+          <li class="current"><a href="#">Summary</a></li>
+          <li><a href="#">Champions</a></li>
+          <li><a href="#">Leagues</a></li>
+          <li><a href="#">Runes</a></li>
+          <li class="mastery"><a href="#">Masteries</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <section id="soloContent">
+    <div class="container2">
+      <div id="box">
+        <img src="./img/platinum_3.png" id="soloRank">
+        <div id="rankTier">
+          <span class="rankDetails">Platinum 3</span>
+            <br>
+          <span id="rankInfo1">70 LP</span>
+          <span class="rankInfo">&nbsp;/ 89W 42L</span>
+            <br>
+          <span class="rankInfo">Win Ratio 82%</span>
+            <br>
+          <span class="rankInfo">Nami's Witch Hunters</span>
+        </div>
+      </div>
+      <div id="main-content">
+        <div class="container3">
+          <div class="headerBox">
+            <nav id="main-content-nav">
+              <ul>
+                <li class="active"><a href="#">Total</a></li>
+                <li><a href="#">Rank Solo</a></li>
+                <li><a href="#">Rank Flex</a></li>
+                <li><a href="#">Queue Type</a><span id="arrow"></span></li>
+              </ul>
+              <div id="searchCont">
+                <div id="searchInput">
+                  <input placeholder="Search a Champion" type="text">
+                  <div id="searchIcon"></div>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div id="matches">
+            <div id="box3">
+                <div id="losesWins">
+                  <span>13G</span>
+                  <span>7W</span>
+                  <span>6L</span>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="flexContent">
+    <div class="container2">
+      <div id="box2">
+        <img src="./img/platinum_2.png" id="flexRank">
+        <div id="rankTierFlex">
+          <div class="rankDetails">Platinum 2</div>
+          <div id="leaguelp">48 LP</div>
+        </div>
+        <div id="flex5s">
+          <div id="flexRank5">Flex 5:5 Rank</div>
+          <div id="teamName">Sejuani's Hunters</div>
+        </div>
+        <div id="winLose">
+          <span>42W</span>
+          <span>17L</span>
+          <br>
+          <span>77%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
