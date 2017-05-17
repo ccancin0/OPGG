@@ -21,7 +21,8 @@ body {
 }
 
 .container3 {
-  width: 69%;
+  /*float: left;*/
+  width: 100%;
   margin: auto;
   overflow: hidden;
 }
@@ -197,23 +198,26 @@ header li:hover {
 }
 
 #box {
+  /*background-color: green;*/
   float: left;
   margin-top: 30px;
   border: 1px solid #cdd2d2;
   box-shadow: 0 1px #dcdfdf;
   background: #f2f2f2;
   border-radius: 1px;
-  overflow: hidden;
+  /*border-bottom: none;*/
+  /*overflow: hidden;*/
 }
 
 #soloRank {
+  float: left;
   width: 120px;
   height: 120px;
   margin-left: 7px;
 }
 
 #rankTier {
-  float: right;
+  float: left;
   margin-top: 20px;
   margin-left: 10px;
   padding: 0 38px 0 0;
@@ -236,7 +240,7 @@ header li:hover {
 }
 
 .rankInfo {
-  float: left;
+  /*float: left;*/
   font-size: 12px;
   line-height: 1.5;
   text-align: left;
@@ -249,10 +253,16 @@ header li:hover {
 
 #flexContent {
   background-color: red;
+
 }
 
 #boxFlex {
-  background-color: gold;
+  float: left;
+  /*background-color: gold;*/
+  /*border: 1px solid #cdd2d2;
+  box-shadow: 0 1px #dcdfdf;
+  background: #f2f2f2;
+  border-radius: 1px;*/
   border-top: 1px solid #cdd2d2;
 }
 
@@ -294,7 +304,7 @@ header li:hover {
 }
 
 #winLose {
-  float: left;
+  float: right;
   font-size: 11px;
   line-height: 1.5;
   text-align: center;
@@ -303,31 +313,12 @@ header li:hover {
   margin: 13px 3px 0 14px;
 }
 
-#champSeason {
-  /*position: relative;*/
-  float: right;
-  margin-top: 10px;
-  padding: 50px 0px 50px 50px;
-  border: 1px solid #cdd2d2;
-  box-shadow: 0 1px #dcdfdf;
-  background: #f2f2f2;
-  border-radius: 1px;
-}
-
-#seasons a {
-  text-decoration: none;
-}
-
-#seasons li{
-  float: left;
-  display: inline;
-}
-
 /* Summoner Match History */
 
 #main-content {
   margin-top: 30px;
-  /*float: right;*/
+  float: left;
+  margin-left: 10px;
 }
 
 .headerBox {
@@ -338,7 +329,7 @@ header li:hover {
 }
 
 #main-content-nav {
-  position: relative;
+  /*position: relative;*/
   border-bottom: none;
   overflow: hidden;
   height: 34px;
@@ -355,7 +346,6 @@ header li:hover {
   text-decoration: none;
   font-size: 12px;
   line-height: 36px;
-  padding: 0 5px 0 5px;
   color: #555e5e;
 }
 
@@ -378,23 +368,25 @@ header li:hover {
   background-position: center;
   cursor: pointer;
   line-height: 36px;
+  margin-right: 190px;
 }
 
-#searchCont {
-  float: right;
+#searchCont li {
+  /*float: right;*/
   height: 34px;
   border-left: 1px solid #cdd2d2;
 }
 
 #searchInput input[type="text"] {
-  float: left;
-  line-height: 36px;
+  /*float: right;*/
+  line-height: 34px;
   border: 0;
   padding: 0 0 0 10px;
   width: 120px;
   color: #999;
   font-size: 13px;
   font-family: inherit;
+  border-left: 1px solid #cdd2d2;
 }
 
 #searchIcon {
@@ -411,6 +403,7 @@ header li:hover {
 /* Summoner Matches */
 
 #box3 {
+  /*float: right;*/
   font-size: 12px;
   color: #666;
   border: 1px solid #cdd2d2;
@@ -418,13 +411,17 @@ header li:hover {
   background: #f2f2f2;
   border-radius: 2px;
   border-top: none;
-  padding: 0 0 150px 0;
+  float: left;
+  /*padding: 0 0 160px 0;*/
+  /*background-color: gold;*/
 }
 
 #matches {
   float: left;
-  padding: 0 15px 105px 0;
-  border-right: 1px solid #cdd2d2;
+  /*padding-bottom: 110px;*/
+  /*margin-right: 15px;*/
+  /*padding: 0 15px 105px 0;*/
+  /*margin-top: 140px; */
 }
 
 #losesWins {
@@ -439,8 +436,9 @@ header li:hover {
 
 #recentPlayed {
   float: left;
-  padding: 16px 25px 5px 0;
+  padding: 16px 10px 5px 0;
   border-right: 1px solid #cdd2d2;
+  border-left: 1px solid #cdd2d2;
 }
 
 #pics {
@@ -500,22 +498,27 @@ header li:hover {
 
 #kdag {
   color: #e19205;
+  font-weight: bold;
 }
 
 #kdaw {
   color: #c6443e;
+  font-weight: bold;
 }
 
 #kdal {
   color: #2daf7f;
+  font-weight: bold;
 }
 
 #prefPos {
   float: left;
-  /*background-color: gold;*/
+  background-color: gold;
+  margin-right: 34px;
 }
 
 #pos {
+  float: left;
   padding: 16px 0 14px 20px;
   line-height: 14px;
   font-size: 12px;
@@ -529,11 +532,31 @@ header li:hover {
 }
 
 #error {
-  display: block;
-  padding: 120px 0 30px 0px;
+  /*display: block;*/
+  padding: 120px 120px;
   text-align: center;
   background: url("../img/error.png") 50% 50px no-repeat;
   font-size: 16px;
   color: #555e5e;
   /*display: none;*/
+}
+
+#champSeason {
+  /*position: absolute;*/
+  float: left;
+  /*margin-top: 50px;*/
+  /*border: 1px solid #cdd2d2;
+  box-shadow: 0 1px #dcdfdf;
+  background: #f2f2f2;
+  border-radius: 1px;*/
+  background-color: red;
+}
+
+#seasons a {
+  text-decoration: none;
+}
+
+#seasons li{
+  float: left;
+  display: inline;
 }
