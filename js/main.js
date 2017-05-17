@@ -2,14 +2,11 @@ $(document).ready(function() {
   $('#button1').click(function(e) {
     e.preventDefault();
     var username = $('#userName').val();
-    var url = 'https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/'+username+'?api_key=RGAPI-a70dd01e-0975-47c5-b767-98e4fd0e940b'
-    console.log(url);
 
     $.ajax({
       url: url,
       type: 'GET',
       contentType: 'application/json; charset=utf-8',
-      async: false,
       dataType: 'json',
       success: function(data, status, jqXHR) {
         console.log(data);
@@ -22,4 +19,26 @@ $(document).ready(function() {
       console.log('complete');
     });
   });
+});
+
+$('#menu-items li a').click(function() {
+  $('li.current').removeClass('current');
+  $(this).closest('li').addClass('current');
+});
+
+$('#main-content-nav li a').click(function() {
+  $('li.active').removeClass('active');
+  $(this).closest('li').addClass('active');
+});
+
+$('#solo, #flex, #queue').click(function() {
+  $('#e').removeAttr('e');
+  $('#e').attr('id','error');
+  $('#error > div').hide();
+});
+
+$('#total').click(function() {
+  $('#error').removeAttr('error');
+  $('#error').attr('id', 'e');
+  $('#e > div').show();
 });

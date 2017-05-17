@@ -157,6 +157,8 @@ header li:hover {
 #menu a {
   color: #141717;
   text-decoration: none;
+  /*border-bottom: 2px solid red;*/
+  /*padding: 0 0 10px 0;*/
 }
 
 #menu li {
@@ -170,7 +172,7 @@ header li:hover {
   font-size: 13px;
   line-height: 40px;
   text-align: center;
-  border-bottom: 1px solid #e8eaea;
+  border-bottom: none;
   border-right: 1px solid #e8eaea;
 }
 
@@ -178,7 +180,7 @@ header li:hover {
   border-right: 1px solid #c6cbcb;
 }
 
-#menu-items .current {
+#menu-items li.current {
   background: #e8eaea;
 }
 
@@ -189,9 +191,9 @@ header li:hover {
 
 /* Summoner Solo Rank */
 
-#soloContent {
+#layoutContent {
+  /*overflow: hidden;*/
   background-color: #e8eaea;
-  overflow: hidden;
 }
 
 #box {
@@ -201,24 +203,23 @@ header li:hover {
   box-shadow: 0 1px #dcdfdf;
   background: #f2f2f2;
   border-radius: 1px;
-  padding: 0 40px 0 0;
-  border-bottom: 1px solid #e8eaea;
+  overflow: hidden;
 }
 
 #soloRank {
-  float: left;
   width: 120px;
   height: 120px;
+  margin-left: 7px;
 }
 
 #rankTier {
-  float: left;
+  float: right;
   margin-top: 20px;
-  margin-left: 15px;
+  margin-left: 10px;
+  padding: 0 38px 0 0;
 }
 
 .rankDetails {
-  float: left;
   color: #1f8ecd;
   font-size: 13px;
   line-height: 1.5;
@@ -243,31 +244,29 @@ header li:hover {
   margin-right: 3px;
 }
 
+
 /* Summoner Flex Rank */
+
 #flexContent {
-  background-color: #e8eaea;
-  overflow: hidden;
+  background-color: red;
 }
 
-#box2 {
-  float: left;
-  border: 1px solid #cdd2d2;
-  box-shadow: 0 1px #dcdfdf;
-  background: #f2f2f2;
-  border-radius: 1px;
-  padding: 10px 0 5px 10px;
+#boxFlex {
+  background-color: gold;
+  border-top: 1px solid #cdd2d2;
 }
 
 #flexRank {
   width: 50px;
   height: 50px;
   float: left;
+  padding: 5px 0 5px 10px;
 }
 
 #rankTierFlex {
   float: left;
-  margin-top: 5px;
-  margin-left: 10px;
+  margin-top: 13px;
+  margin-left: 8px;
 }
 
 #leaguelp {
@@ -282,7 +281,7 @@ header li:hover {
   font-size: 11px;
   line-height: 1.5;
   text-align: center;
-  margin: 6.5px 0 0 20px;
+  margin: 13px 0 0 20px;
 }
 
 #flexRank5 {
@@ -301,12 +300,34 @@ header li:hover {
   text-align: center;
   font-weight: bold;
   color: #879292;
-  margin: 6.5px 3px 0 14px;
+  margin: 13px 3px 0 14px;
+}
+
+#champSeason {
+  /*position: relative;*/
+  float: right;
+  margin-top: 10px;
+  padding: 50px 0px 50px 50px;
+  border: 1px solid #cdd2d2;
+  box-shadow: 0 1px #dcdfdf;
+  background: #f2f2f2;
+  border-radius: 1px;
+}
+
+#seasons a {
+  text-decoration: none;
+}
+
+#seasons li{
+  float: left;
+  display: inline;
 }
 
 /* Summoner Match History */
+
 #main-content {
   margin-top: 30px;
+  /*float: right;*/
 }
 
 .headerBox {
@@ -318,8 +339,7 @@ header li:hover {
 
 #main-content-nav {
   position: relative;
-  border-bottom: 1px solid #cdd2d2;
-  margin-bottom: -1px;
+  border-bottom: none;
   overflow: hidden;
   height: 34px;
 }
@@ -339,14 +359,14 @@ header li:hover {
   color: #555e5e;
 }
 
-#main-content-nav li.active a{
+#main-content-nav li.active a {
   color: #1f8ecd;
   font-weight: bold;
   border-bottom: 2px solid #1f8ecd;
   padding: 0 0 7px 0;
 }
 
-#main-content-nav li:hover:not(.active) a{
+#main-content-nav li:hover:not(.active) a {
   color: #141717;
 }
 
@@ -380,38 +400,140 @@ header li:hover {
 #searchIcon {
   float: right;
   background: url("../img/search.png") no-repeat;
-  width: 25px;
-  height: 5px;
+  width: 15px;
   background-position: center;
   cursor: pointer;
-  margin-left: -5px;
-  padding: 15px 0 15px 0;
+  margin-top: 2px;
+  padding: 15px 15px 15px 0;
 }
 
+
 /* Summoner Matches */
-#matches {
+
+#box3 {
+  font-size: 12px;
+  color: #666;
   border: 1px solid #cdd2d2;
   box-shadow: 0 1px #dcdfdf;
   background: #f2f2f2;
   border-radius: 2px;
-  border-top: 1px solid #e8eaea;
-  background-color: green;
+  border-top: none;
+  padding: 0 0 150px 0;
 }
 
-#box3 {
-  padding: 16px 0 174px 25px;
-  /*line-height: 14px;*/
-  font-size: 12px;
-  color: #666;
-  /*height: 14px;*/
-  /*background-color: gold;*/
+#matches {
+  float: left;
+  padding: 0 15px 105px 0;
+  border-right: 1px solid #cdd2d2;
 }
 
 #losesWins {
+  margin-left: 26px;
+  margin-top: 16px;
   background-color: red;
-  float: left;
 }
 
-#box4 {
-/*margin-top: -30px;*/
+#chart {
+  background-color: green;
+}
+
+#recentPlayed {
+  float: left;
+  padding: 16px 25px 5px 0;
+  border-right: 1px solid #cdd2d2;
+}
+
+#pics {
+  float: left;
+  margin-left: 16px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+.picss {
+  float: left;
+  margin-left: 16px;
+  margin-right: 10px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+.name {
+  margin: 0px 20px 12px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+#champName {
+  float: left;
+  margin: 0px 30px 12px 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.champStats {
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 14px;
+  color: #333;
+}
+
+#champStats {
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 14px;
+  color: #333;
+}
+
+.champWL {
+  font-weight: lighter;
+  font-size: 11px;
+  line-height: 14px;
+  color: #333;
+}
+
+#kda {
+  margin-left: 15px;
+}
+
+#kdag {
+  color: #e19205;
+}
+
+#kdaw {
+  color: #c6443e;
+}
+
+#kdal {
+  color: #2daf7f;
+}
+
+#prefPos {
+  float: left;
+  /*background-color: gold;*/
+}
+
+#pos {
+  padding: 16px 0 14px 20px;
+  line-height: 14px;
+  font-size: 12px;
+  color: #666;
+  height: 14px;
+}
+
+#posWin {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+#error {
+  display: block;
+  padding: 120px 0 30px 0px;
+  text-align: center;
+  background: url("../img/error.png") 50% 50px no-repeat;
+  font-size: 16px;
+  color: #555e5e;
+  /*display: none;*/
 }
