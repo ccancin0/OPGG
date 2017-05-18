@@ -103,18 +103,13 @@
                 <li id="solo"><a href="#">Ranked Solo</a></li>
                 <li id="flex"><a href="#">Ranked Flex</a></li>
                 <li id="queue"><a href="#">Queue Type</a><span id="arrow"></span></li>
-                <li id="seachCont"><div id="searchInput"><input placeholder="Search a Champion" type="text"><span id="searchIcon"></span></div>
+                <li id="seachCont">
+                <div id="searchInput"><input placeholder="Search a Champion" type="text"><span id="searchIcon"></span></div>
               </ul>
-              <!-- <div id="searchCont">
-                <div id="searchInput">
-                  <input placeholder="Search a Champion" type="text">
-                  <div id="searchIcon"></div>
-                </div>
-              </div> -->
             </nav>
           </div>
           <div id="box3">
-            <!-- <div id="e"> -->
+            <div id="e">
               <div id="matches">
                 <div id="losesWins">
                   <span>13G</span>
@@ -153,16 +148,26 @@
               </div>
               <div id="prefPos">
                 <div id="pos">Preferred Position (Rank)</div>
-                <div id="posWin">Top</div>
+                <div id="suppImg"><i id="sprite-1" class="sprite"></i></div>
+                <div id="posWin">
+                  <div class="p">Support</div>
+                    <span class="roleW"><b>89</b>%&nbsp;</span>
+                    <span class="roleR">Win Ratio&nbsp;<b>62</b>%</span>
+                  <div id="topImg"><i id="sprite-2" class="sprite"></i></div>
+                    <div class="p">Top</div>
+                      <span class="roleW"><b>74</b>%&nbsp;</span>
+                        <span class="roleR">Win Ratio&nbsp;<b>58</b>%</span>
+                </div>
               </div>
-            <!-- </div> -->
+            </div>
           </div>
         </div>
       </div>
       <div id="champSeason">
-        <ul id="seasons">
-          <li><a href="#"></a>Season 7</li>
-          <li><a href="#"></a>Season 6</li>
+        <ul>
+          <li id="link" class="active-item"><a href="#"></a>Season 7</li>
+          <li id="s6"><a href="#"></a>Season 6</li>
+          <li id="item"><a href="#"></a><i id="sprite-3" class="sprite"></i></li>
         </ul>
       </div>
     </div>
