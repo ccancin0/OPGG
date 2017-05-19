@@ -21,4 +21,9 @@ $(document).ready(function() {
     $('#error').attr('id', 'e');
     $('#e > div').show();
   });
+
+  $('#s6, #link').click(function() {
+    $('li.active-item').removeClass('active-item');
+    $(this).closest('li').addClass('active-item');
+  });
 });

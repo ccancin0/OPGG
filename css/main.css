@@ -18,16 +18,12 @@ body {
   width: 62%;
   margin: auto;
   overflow: hidden;
-  /*float: left;*/
-  /*background-color: red;*/
 }
 
 .container3 {
-  /*float: left;*/
   width: 100%;
   margin: auto;
   overflow: hidden;
-  /*background-color: blue;*/
 }
 
 ul {
@@ -105,7 +101,6 @@ header li:hover {
 /* Summoner profile */
 
 #summoner {
-  /*background-color: yellow;*/
   margin-top: 50px;
   margin-left: 200px;
 }
@@ -119,7 +114,6 @@ header li:hover {
 }
 
 #name {
-  /*background-color: red;*/
   float: right;
   margin-right: 780px;
   margin-top: -10px;
@@ -162,13 +156,10 @@ header li:hover {
 #menu a {
   color: #141717;
   text-decoration: none;
-  /*border-bottom: 2px solid red;*/
-  /*padding: 0 0 10px 0;*/
 }
 
 #menu li {
   float: left;
-  /*display: block;*/
   min-width: 70px;
   height: 39px;
   border: 1px solid #c6cbcb;
@@ -197,20 +188,16 @@ header li:hover {
 /* Summoner Solo Rank */
 
 #layoutContent {
-  /*overflow: hidden;*/
   background-color: #e8eaea;
 }
 
 #box {
-  /*background-color: green;*/
   float: left;
   margin-top: 30px;
   border: 1px solid #cdd2d2;
   box-shadow: 0 1px #dcdfdf;
   background: #f2f2f2;
   border-radius: 1px;
-  /*border-bottom: none;*/
-  /*overflow: hidden;*/
 }
 
 #soloRank {
@@ -244,7 +231,6 @@ header li:hover {
 }
 
 .rankInfo {
-  /*float: left;*/
   font-size: 12px;
   line-height: 1.5;
   text-align: left;
@@ -317,7 +303,6 @@ header li:hover {
   margin-top: 30px;
   float: right;
   margin-right: 40px;
-  /*margin-left: 10px;*/
 }
 
 .headerBox {
@@ -328,7 +313,6 @@ header li:hover {
 }
 
 #main-content-nav {
-  /*position: relative;*/
   border-bottom: none;
   overflow: hidden;
   height: 34px;
@@ -371,13 +355,11 @@ header li:hover {
 }
 
 #searchCont li {
-  /*float: right;*/
   height: 34px;
   border-left: 1px solid #cdd2d2;
 }
 
 #searchInput input[type="text"] {
-  /*float: right;*/
   line-height: 34px;
   border: 0;
   padding: 0 0 0 10px;
@@ -402,7 +384,6 @@ header li:hover {
 /* Summoner Matches */
 
 #box3 {
-  /*float: right;*/
   font-size: 12px;
   color: #666;
   border: 1px solid #cdd2d2;
@@ -411,16 +392,10 @@ header li:hover {
   border-radius: 2px;
   border-top: none;
   float: left;
-  /*padding: 0 0 160px 0;*/
-  /*background-color: gold;*/
 }
 
 #matches {
   float: left;
-  /*padding-bottom: 110px;*/
-  /*margin-right: 15px;*/
-  /*padding: 0 15px 105px 0;*/
-  /*margin-top: 140px; */
 }
 
 #losesWins {
@@ -500,13 +475,18 @@ header li:hover {
   font-weight: bold;
 }
 
-#kdaw {
+.kdaw {
   color: #c6443e;
   font-weight: bold;
 }
 
-#kdal {
+.kdal {
   color: #2daf7f;
+  font-weight: bold;
+}
+
+.kdab {
+  color: #1f8ecd;
   font-weight: bold;
 }
 
@@ -563,7 +543,6 @@ header li:hover {
 
 .roleW {
   float: left;
-  /*line-height: 12px;*/
   margin-bottom: -10px;
   font-size: 11px;
   color: #1f8ecd;
@@ -584,67 +563,57 @@ header li:hover {
   /*display: none;*/
 }
 
-#champSeason {
-  /*position: relative;*/
+/* Side Content - Seasons */
+
+
+#sideContent {
   float: left;
   margin-top: 12px;
   border: 1px solid #cdd2d2;
   box-shadow: 0 1px #dcdfdf;
   background: #f2f2f2;
   border-radius: 1px;
-  /*background-color: red;*/
+  font-size: 12px;
 }
 
-#champSeason li {
+#sideNav li {
+  color: #879292;
   text-decoration: none;
-  display: inline;
+  float: left;
+  display:block;
 }
 
-#champSeason li:hover {
+#sideNav li:hover {
   cursor: pointer;
 }
 
-#champSeason li:not(#item) {
-  /*background-color: red;*/
-  /*float: left;*/
-  padding: 0 20px 0 46px;
+#sideNav li:not(#item) {
+  padding: 0px 37.9px;
 }
 
-#champSeason a {
-  /*line-height: 38px;
-  height: 38px;*/
-  /*border: 1px solid #c6cbcb;*/
-  /*padding-left: 6px;
-  padding-right: 6px;
-  font-size: 12px;*/
+.link {
+  line-height: 38px;
+}
+
+#link {
+  border-bottom: 1px solid #cdd2d2;
 }
 
 #item {
-  /*background-color: gold;*/
-  padding: 10.5px 10px;
-  border-left: 1px solid #cdd2d2;
-  line-height: 38px;
-  /*display: table-cell;
+  padding: 0px 10px;
   border-left: 1px solid #cdd2d2;
   border-bottom: 1px solid #cdd2d2;
-  background-color: #f2f2f2;*/
 }
 
 #s6 {
-  width: 100%;
-  /*height: 38px;*/
-  /*display: block;*/
-  color: #879292;
-  font-size: 12px;
   border-left: 1px solid #cdd2d2;
-  /*text-decoration: none;*/
-  line-height: 38px;
-  /*text-align: center;*/
-  margin-right: 12px;
+  border-bottom: 1px solid #cdd2d2;
 }
 
-#champSeason li.active-item {
-  border-bottom-color: #ededed;
+#sideNav li.active-item {
+  border-bottom: none;
+  color: #555e5e;
+  font-weight: bold;
   background-color: #ededed;
 }
 
@@ -655,33 +624,124 @@ header li:hover {
   background-image: url(../img/site.png);
 }
 
-#link {
+.champBox {
+  display: table;
   width: 100%;
-  /*height: 38px;*/
-  /*display: block;*/
+  border-bottom: 1px solid #cdd2d2;
   color: #879292;
-  font-size: 12px;
-  /*text-decoration: none;*/
-  line-height: 38px;
   text-align: center;
 }
 
-#seasons a {
+.champImg {
+  display: table-cell;
+  width: 60px;
+  padding: 5px 0 0 0;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.champ {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.champInfo {
+  display: table-cell;
+  width: 70px;
+  text-align: left;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+
+.champN {
+  width: 70px;
+  color: #555e5e;
+  font-weight: bold;
+  font-size: 13px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.champMin {
+  margin-top: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.cs {
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.champKDA {
+  display: table-cell;
+  line-height: 1.8;
+  vertical-align: middle;
+}
+
+.kdan {
+  font-size: 13px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.score {
+  font-size: 13px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.text {
+  font-size: 13px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.kdae {
+  font-size: 12px;
+  color: #879292;
+  white-space: nowrap;
+}
+
+.bar {
+  color: #bbb;
+}
+
+.played {
+  display: table-cell;
+  width: 70px;
+  line-height: 1.8;
+  vertical-align: middle;
+}
+
+.winRatio {
+  color: #879292;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.title {
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+#moreInfo {
+  display: block;
   text-decoration: none;
-  /*width: 100%;*/
-  /*border-bottom-color: #ededed;
-  background-color: #ededed;*/
+  color: #555e5e;
+  padding: 10px;
 }
 
-#seasons li {
-  float: left;
-  display: inline;
-  /*width: 100%;*/
-  height: 38px;
-  border: 1px solid #c6cbcb;
-  padding-left: 6px;
-  padding-right: 6px;
-  font-size: 12px;
-  line-height: 38px;
-  text-align: center;
+#more a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#sprite-4 {
+  background-position: -173px -4079px;
+  width: 7px;
+  height: 4px;
+  margin-right: 10px;
 }
